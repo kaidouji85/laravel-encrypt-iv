@@ -40,6 +40,9 @@ class EncryptIV extends Command
      */
     public function handle()
     {
+        // 勉強用に暗号化前の情報をコンソール出力している
+        // ただ、セキュリティ上の問題があるので、本番環境では絶対にこのようなコードを書いてはいけない
+
         $origin = "オリジナルメッセージ";
         $this->info("origin: {$origin}");
         
